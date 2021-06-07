@@ -1,0 +1,7 @@
+Android apps are built as a combination of components that can be invoked individually. For example, an activity is a type of app component that provides a user interface (UI).
+
+The "main" activity starts when the user taps your app's icon. You can also direct the user to an activity from elsewhere, such as from a notification or even from a different app.
+
+Other components, such as WorkManager, allow your app to perform background tasks without a UI.
+
+After you build your first app, you can learn more about the other app components at Application fundamentals.
