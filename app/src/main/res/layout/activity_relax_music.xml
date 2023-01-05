@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_activity_item_gradiant_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/ll_back"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back_arrow"
+            android:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:text="Relax Music"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/card"
+        android:layout_below="@+id/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/card"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_30sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:id="@+id/btns_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_menu_bg">
+
+            <ImageView
+                android:id="@+id/img_rain"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="70dp"
+                android:layout_marginBottom="13dp"
+                android:layout_toStartOf="@+id/img_nature"
+                android:padding="@dimen/_5sdp"
+               android:src="@drawable/ic_item_three" />
+
+            <ImageView
+                android:id="@+id/img_nature"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="18dp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/forest_menu" />
+
+            <ImageView
+                android:id="@+id/img_instrument"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginBottom="19dp"
+                android:layout_toEndOf="@+id/img_nature"
+                android:padding="@dimen/_5sdp"
+               android:src="@drawable/meditation_menu" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

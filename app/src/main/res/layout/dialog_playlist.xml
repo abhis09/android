@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/image"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <com.example.new_meditation.FontText.TextViewFontStyle
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
+
+    <com.example.new_meditation.FontText.TextViewFontStyle
+        android:id="@+id/txttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please input Playlist name"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <com.example.new_meditation.FontText.TextViewFontStyleEdit
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+        android:maxLength="30"
+        android:textColor="#000"
+        android:textCursorDrawable="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.example.new_meditation.FontText.TextViewFontStyleButton
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@null"
+            android:text="cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary" />
+
+        <com.example.new_meditation.FontText.TextViewFontStyleButton
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@null"
+            android:text="Ok"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+</LinearLayout>

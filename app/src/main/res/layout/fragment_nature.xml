@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_activity_item_gradiant_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/r1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_forest"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_forest"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_forest_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Forest"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/r2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_creek"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_creek"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_creek_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Creek"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/r3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_bird"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_bird"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_bird_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Bird"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/r4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_waterfall"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_waterfall"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_waterfall_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Waterfall"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/r5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_fire"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_fire"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_fire_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Fire"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/r6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_leaves"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_leaves"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_leaves_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Leaves"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/r7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_grasshopper"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/ic_grasshopper"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_grasshopper_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r7"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Grasshopper"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/r8"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_wind"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_wind"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_wind_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Wind"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/r9"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_frogs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_frogs"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_frogs_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r9"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Frogs"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

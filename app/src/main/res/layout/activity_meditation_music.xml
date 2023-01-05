@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_activity_item_gradiant_color"
+    tools:context=".activity.MeditationMusicActivity">
+
+    <RelativeLayout
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/ll_back"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Meditation Music"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textTitle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:paddingBottom="@dimen/_10sdp" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

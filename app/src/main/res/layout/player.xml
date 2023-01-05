@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/background_color"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_back2" />
+
+            <RelativeLayout
+                android:id="@+id/btnrc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/btnadd"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_add_playlist"
+                    app:tint="@color/black" />
+
+                <ImageView
+                    android:id="@+id/btnPlaylist"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_add_playlist"
+                    android:visibility="gone"
+                    app:tint="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/favrv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/btnrc">
+
+                <ImageView
+                    android:id="@+id/btnfav"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_fav"
+                    app:tint="@color/black" />
+
+                <ImageView
+                    android:id="@+id/btnfavfull"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_fav_full"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.example.new_meditation.FontText.TextViewFontStyle
+                android:id="@+id/txtType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_toLeftOf="@+id/favrv"
+                android:layout_toRightOf="@+id/btnBack"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="thank"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <com.example.new_meditation.FontText.TextViewFontStyleBold
+                android:id="@+id/retryBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retry"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/main_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_100sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/bg_profile"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_centerHorizontal="true"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="0dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_img"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <com.example.new_meditation.FontText.TextViewFontStyle
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="songname"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <com.example.new_meditation.FontText.TextViewFontStyle
+                android:id="@+id/songTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="00 min"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player_footer_bg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/btnRepeat"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_repeat" />
+
+                <ImageView
+                    android:id="@+id/btnPrevious"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/btnPlay"
+                    android:layout_toRightOf="@+id/btnRepeat"
+                    android:src="@drawable/fast_back" />
+
+                <ImageView
+                    android:id="@+id/btnPlay"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/play_player" />
+
+                <ImageView
+                    android:id="@+id/btnNext"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/btnShuffle"
+                    android:layout_toRightOf="@+id/btnPlay"
+                    android:src="@drawable/fast_forward" />
+
+                <ImageView
+                    android:id="@+id/btnShuffle"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_shuffle" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <app.minimize.com.seek_bar_compat.SeekBarCompat
+            android:id="@+id/songProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/player_footer_bg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            app:progressBackgroundColor="@color/txt_color"
+            app:progressColor="@color/txt_color"
+            app:thumbAlpha="2"
+            app:thumbColor="@color/txt_color" />
+
+        <LinearLayout
+            android:id="@+id/timerDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/songProgressBar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <com.example.new_meditation.FontText.TextViewFontStyle
+                android:id="@+id/songCurrentDurationLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="@color/txt_color"
+                android:textStyle="bold" />
+
+            <com.example.new_meditation.FontText.TextViewFontStyle
+                android:id="@+id/songTotalDurationLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/txt_color"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

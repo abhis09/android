@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/image"
+    android:orientation="vertical">
+
+    <com.example.new_meditation.FontText.TextViewFontStyle
+        android:id="@+id/alert_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text=""
+        android:textColor="@color/transparent"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <com.example.new_meditation.FontText.TextViewFontStyle
+        android:id="@+id/alert_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp">
+
+        <com.example.new_meditation.FontText.TextViewFontStyleButton
+            android:id="@+id/customDialogCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:background="@color/transparent"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+
+        <com.example.new_meditation.FontText.TextViewFontStyleButton
+            android:id="@+id/customDialogOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@color/transparent"
+            android:text="OK"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</LinearLayout>

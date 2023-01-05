@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/select_item"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@android:drawable/dialog_holo_light_frame">
+
+        <ImageView
+            android:id="@+id/favsong_item_imageview"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pager_default" />
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/favsong_item_imageview"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.example.new_meditation.FontText.TextViewFontStyle
+                    android:id="@+id/favlist_item_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="title"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.example.new_meditation.FontText.TextViewFontStyle
+                    android:id="@+id/fav_item_Play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="bottom"
+                    android:paddingTop="7dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="7dp"
+                    android:text="play"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/deleteView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#40000000">
+
+            <ImageView
+                android:id="@+id/check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:scaleType="center"
+                android:src="@drawable/ic_check" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

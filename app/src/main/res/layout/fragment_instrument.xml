@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_activity_item_gradiant_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/r1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_piano"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_piano"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_piano_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Piano"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/r2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_flute"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_flute"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_flute_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Flute"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/r3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_stone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_stone"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_stone_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Stone"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/r4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_bowl"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_bowl"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_bowl_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+
+                    android:text="Bowl"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/r5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_bell"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_bell"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_bell_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+
+                    android:text="Bell"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/r6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_chimes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_chimes"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_chimes_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+
+                    android:text="Chimes"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/r7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_white_noise"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_white_noise"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_white_noise_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r7"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+
+                    android:text="White Noise"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/r8"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_pink_noise"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_pink_noise"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_pink_noise_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+
+                    android:text="Pink Noise"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/r9"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_brown_noise"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_brown_noise"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_brown_noise_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r9"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Brown Noise"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

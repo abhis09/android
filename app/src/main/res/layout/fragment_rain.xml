@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_activity_item_gradiant_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/r1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_rain_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_rain_light"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_rain_light_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Rain Light"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/r2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_rain_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_rain_medium"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_rain_medium_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Rain Medium"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/r3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_rain_thunder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_rain_thunder"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_rain_thunder_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Rain Thunder"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/r4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_rain_umbrella"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_rain_umbrella"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_rain_umbrella_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Rain on Umbrella"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/r5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_rain_roof"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_rain_roof"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_rain_roof_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Rain on Roof"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/r6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_rain_window"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_rain_window"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_rain_window_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Rain on Window"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/r7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_rain_leaves"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_rain_leaves"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_rain_leaf_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r7"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Rain on Leaves"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/r8"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_drops"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_drops"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_drop_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Drops"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/r9"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_rain_ocean"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_unselect">
+
+                        <ImageView
+                            android:id="@+id/img_rain_ocean"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_rain_ocean_2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r9"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    android:text="Rain on Ocean"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
